@@ -82,6 +82,14 @@
   .swiper::-webkit-scrollbar-thumb{background:var(--line);border-radius:100px}
   .swiper img{width:280px;flex:0 0 auto;border-radius:14px;scroll-snap-align:start;box-shadow:0 8px 22px rgba(13,51,0,.12)}
 
+  /* PAINS */
+  .pains-sec{padding-top:64px;padding-bottom:64px}
+  .pains{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  @media(max-width:780px){.pains{grid-template-columns:1fr}}
+  .pain{background:var(--green-ink);color:#eaf6d6;border-radius:18px;padding:30px 26px}
+  .pain .pnum{font-size:13px;font-weight:800;letter-spacing:1px;color:var(--green);margin-bottom:16px}
+  .pain p{font-size:17px;line-height:1.45}
+
   /* DIFFERENCE table */
   .vs{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:8px}
   @media(max-width:680px){.vs{grid-template-columns:1fr}}
@@ -167,6 +175,29 @@
   </div>
   <small>Founding offer: the first five clients skip the setup fee.</small>
 </div></header>
+
+<!-- SOUND FAMILIAR -->
+<section class="pains-sec"><div class="wrap">
+  <div class="sec-head">
+    <div class="eyebrow">Sound familiar</div>
+    <h2>You already know this part.</h2>
+  </div>
+  <div class="pains">
+    <div class="pain">
+      <div class="pnum">01</div>
+      <p>You sit down to film. You watch it back, you hate it, you delete it. The post never goes up.</p>
+    </div>
+    <div class="pain">
+      <div class="pnum">02</div>
+      <p>You hired an editor to save time. Now you spend your week managing the editor. The brief, the revisions, the chasing.</p>
+    </div>
+    <div class="pain">
+      <div class="pnum">03</div>
+      <p>You post when work is slow. The second you get busy, you vanish. The algorithm notices, and so do the people who almost bought.</p>
+    </div>
+  </div>
+  <p class="kicker" style="margin-top:34px">All three come from the same place. Your content runs on your willpower. We make it run on a system.</p>
+</div></section>
 
 <!-- PROOF -->
 <section id="work" class="band"><div class="wrap">
